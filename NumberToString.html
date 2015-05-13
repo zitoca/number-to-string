@@ -6,8 +6,9 @@
     <script src="src/numberToWords.js"></script>
 		<script>
 			$(document).ready(function(){				
-				$( "#convertButton" ).click(function( event ) {					
-					$("#representation").html($("#amountBox").numberToWords($("#amountBox").val()));					
+				$("#convertButton").click(function( event ) {	
+          var output_text = $(this).numberToWords($("#amountBox").val());
+					$("#representation").html(output_text);					
 				});	
 			});
 		</script>
